@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #C9F1FF;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    margin-top: 100vh; /* 最初の画面分のスペース */
+}
+
+/* ... 既存のスタイル ... */
+
+.profile-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.profile-image {
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* スクロール可能なコンテンツのスタイル */
+.scrollable-content {
+    position: relative;
+    margin-top: 100vh;  /* 最初の画面分のスペース */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* 画像ギャラリーのスタイル */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.gallery-item {
+    width: 100%;
+    aspect-ratio: 1;  /* 正方形にする */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    pointer-events: none; /* キャンバスのイベントを邪魔しないように */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    pointer-events: auto; /* 画像をクリック可能にする */
+}
+
+.profile-image {
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cute-link {
+    display: block; /* 要素をブロック要素にする */
+    margin-bottom: 10px; /* 要素間のスペースを追加 */
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cute-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#link-container {
+    position: fixed;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+}
+
+/* ... 既存のスタイル ... */
+
+/* フッターのスタイル */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffccff;
+    padding: 10px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+    font-size: 1.9em;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #1307f3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFB6C1;
+} */
+
+/* ... 既存のスタイル ... */
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFEBF0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    z-index: 2;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-content {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+}
+
+.profile-content h1 {
+    font-size: 1.5em;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.profile-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* ... 既存のスタイル ... */
+
+#button-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    transform: scale(1.3);
+}
+
+.button-2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-2 {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#button-icon2 {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 10;
+    transform: scale(1.3);
+}
+
+.button-3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-3 {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ハンバーガーメニューのスタイル
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+} */
+
+/* ... 既存のスタイル ... */
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FFB6C1; /* 背景色を可愛く */
+    border-radius: 10px; /* 角を丸く */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.hamburger-menu:hover {
+    background-color: #FF69B4; /* ホバー時の色を変更 */
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF; /* アイコンの色を白に */
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px; /* 角を丸く */
+}
+
+/* ハンバーガーメニューがアクティブな時のアイコン変更 */
+.hamburger-menu.active .hamburger-icon:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #FF69B4; /* アクティブ時の色を変更 */
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #FF69B4; /* アクティブ時の色を変更 */
+}
+
+/* ... 既存のスタイル ... */
+
+/* ナビゲーションメニューのスタイル */
+.nav-menu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(7, 174, 246, 0.406);
+    z-index: 999;
+    transition: 0.4s;
+    padding: 60px 20px;
+    box-shadow: 2px 0 5px rgba(79, 20, 208, 0.187);
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+/* ハンバーガーメニューがアクティブな時のアイコン変更 */
+.hamburger-menu.active .hamburger-icon:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* ナビゲーションメニューの項目スタイル */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 40px 0;
+}
+
+.nav-menu a {
+    color: #1307f3;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #FFB6C1;
+}
